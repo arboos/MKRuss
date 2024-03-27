@@ -10,12 +10,22 @@ public class PlayerController : MonoBehaviour
     public float jumpForce;
     public Vector2 movementInput;
     public int id;
-
+    
+    
     private Rigidbody rb;
-
+    private GameObject opponent;
+    
+    
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        GameObject[] opponents = GameObject.FindGameObjectsWithTag("Player");
+        foreach (var character in opponents)
+        {
+            if(character.GetComponent<PlayerController>().id == id) continue;
+            opponent = character;
+            return;
+        }
     }
 
     private void Update()
