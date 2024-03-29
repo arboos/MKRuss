@@ -896,8 +896,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isChosing: 1
-  inputs: []
-  playerPrefab: {fileID: 7865669277942122526, guid: 8f973ec17d04fd742abd8f50008973bc, type: 3}
+  playerPrefab: {fileID: 6622072289251654368, guid: a2e7ab849dd5066429a797a1c6815337, type: 3}
 --- !u!1 &900464369
 GameObject:
   m_ObjectHideFlags: 0
